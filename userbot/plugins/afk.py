@@ -1,5 +1,7 @@
 # by uniborg...Thanks @spechide
-# Now will be used in AuraXlBot too....
+# Now will be used in AuraXlBot
+
+
 import asyncio
 import datetime
 from datetime import datetime
