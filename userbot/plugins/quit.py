@@ -4,6 +4,9 @@
 import time
 
 from telethon.tl.functions.channels import LeaveChannelRequest
+from userbot import *
+from AuraXBot.utils import *
+from AuraXBot.utils import sudo_cmd
 
 from AuraXBot.utils import admin_cmd
 
