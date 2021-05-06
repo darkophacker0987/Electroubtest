@@ -9,6 +9,7 @@ from AuraXBot.utils import admin_cmd
 
 
 @borg.on(admin_cmd("kickme", outgoing=True))
+@bot.on(sudo_cmd("kickme", allow_sudo=True))
 async def leave(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("**I Iz lev this Kensur grp**")

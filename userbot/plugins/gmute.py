@@ -18,7 +18,7 @@ async def blowjob(event):
         	
         return
     elif event.is_private:
-        await edit_or_reply(event, "`Son can't speak now🤐. Filled mouth with cum`💦")
+        await edit_or_reply(event, "`𝘽𝙖𝙨 𝙫𝙝𝙪𝙩 𝙗𝙤𝙡 𝙡𝙞𝙮𝙖 𝙖𝙗 𝙩𝙝𝙤𝙙𝙖 𝙧𝙚𝙨𝙩 𝙠𝙖𝙧𝙡𝙤 𝙬𝙖𝙧𝙣𝙖 𝙧𝙚𝙨𝙩 𝙞𝙣 𝙥𝙚𝙖𝙘𝙚 𝙝𝙤 𝙟𝙖𝙤𝙜𝙚...!!💦")
         await asyncio.sleep(3)
         private = True
     reply = await event.get_reply_message()
@@ -63,7 +63,7 @@ async def cumshot(event):
         return await edit_or_reply(event, "Please reply to a user or add them into the command to ungmute them.")
     chat_id = event.chat_id
     if not is_muted(userid, "gmute"):
-        return await edit_or_reply(event, "This user can already speak freely✌️😃")
+        return await edit_or_reply(event, "𝙏𝙝𝙞𝙨 𝙪𝙨𝙚𝙧 𝙘𝙖𝙣 𝙖𝙡𝙧𝙚𝙖𝙙𝙮 𝙨𝙥𝙚𝙖𝙠 𝙛𝙧𝙚𝙚𝙡𝙮✌️😃")
     try:
         unmute(userid, "gmute")
     except Exception as e:

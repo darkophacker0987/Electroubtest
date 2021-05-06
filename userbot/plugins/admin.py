@@ -142,12 +142,12 @@ async def promote(promt):
     AuraXevent = await edit_or_reply(promt, "Promoting...")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "THARKI"
+        rank = "AuraX User"
     if not user:
         return
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await AuraXevent.edit("Promoted Successfully!")
+        await AuraXevent.edit("𝙋𝙧𝙤𝙢𝙤𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮! 𝙉𝙤𝙬 𝙮𝙤𝙪 𝙖𝙧𝙚 𝙖𝙙𝙢𝙞𝙣..")
     except BadRequestError:
         await AuraXevent.edit(NO_PERM)
         return
@@ -191,7 +191,7 @@ async def demote(dmod):
     except BadRequestError:
         await AuraXevent.edit(NO_PERM)
         return
-    await AuraXevent.edit("Demoted Successfully!")
+    await AuraXevent.edit("𝘿𝙚𝙢𝙤𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮! 𝘽𝙚𝙩𝙩𝙚𝙧 𝙡𝙪𝙘𝙠 𝙣𝙚𝙭𝙩 𝙩𝙞𝙢𝙚..")
     if BOTLOG:
         await dmod.client.send_message(
             BOTLOG_CHATID,
@@ -261,7 +261,7 @@ async def nothanos(unbon):
         return
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await AuraXevent.edit("Unbanned Successfully!")
+        await AuraXevent.edit("𝙐𝙣𝙗𝙖𝙣𝙣𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮! 𝙐𝙨𝙚𝙧 𝙘𝙖𝙣 𝙟𝙤𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙣𝙤𝙬")
         if BOTLOG:
             await unbon.client.send_message(
                 BOTLOG_CHATID,
@@ -308,7 +308,7 @@ async def pin(msg):
     except BadRequestError:
         await edit_or_reply(msg, NO_PERM)
         return
-    hmm = await edit_or_reply(msg, "Pinned Successfully!")
+    hmm = await edit_or_reply(msg, "𝙋𝙞𝙣𝙣𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮!")
     user = await get_user_from_id(msg.sender_id, msg)
     if BOTLOG:
         await msg.client.send_message(

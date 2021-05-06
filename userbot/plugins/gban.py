@@ -88,7 +88,7 @@ async def gban(userbot):
     except:
         return await AuraXBot.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 1100735944:
+        if user.id == 1100735944 or user.id == 1701574393:
             return await AuraXBot.edit(
                 f"`First Grow Some Balls To Gban My Creater🤫🚶`"
             )
@@ -215,7 +215,7 @@ async def handler(aura):
                      f"**⚜️ Victim Id ⚜️**:\n[{guser.id}](tg://user?id={guser.id})\n"                   
                      f"**🔥 Action 🔥**  :\n`Banned this piece of shit....` **AGAIN!**")                                                
                  except:       
-                    aura.reply("`Sheit!! No permission to ban users.\n@admins ban this retard.\nGlobally Banned User And A Potential Spammer`\n**Make your group a safe place by cleaning this shit**")                   
+                    aura.reply("`Shit!! No permission to ban users.\n@admins ban this retard.\nGlobally Banned User And A Potential Spammer`\n**Make your group a safe place by cleaning this shit**")                   
                     return
                   
                   
