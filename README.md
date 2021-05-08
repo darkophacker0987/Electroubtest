@@ -135,7 +135,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ### TELEGRAM Accounts㋛︎
 
-##### GAURAV ☻︎ ☞︎︎︎ <a href="https://t.me/@tunning_Gaurav"> <img src="https://img.shields.io/badge/GAURAV-leaderdev-black?style=social&logo=telegram" alt="DEVELOPER" /></a>
+##### GAURAV ☻︎ ☞︎︎︎ <a href="https://t.me/Stunning_Gaurav"> <img src="https://img.shields.io/badge/GAURAV-leaderdev-black?style=social&logo=telegram" alt="DEVELOPER" /></a>
 
 
 ##### YASH ☻︎ ☞︎︎︎ <a href="https://t.me/Itzmeyaxh"> <img src="https://img.shields.io/badge/YASH-dev-blue?style=social&logo=telegram" alt="DEVELOPER" /></a> 
