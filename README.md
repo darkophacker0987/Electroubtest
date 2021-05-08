@@ -130,3 +130,19 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 </details>
 
+
+# 𝙳𝙴𝚅𝙴𝙻𝙿𝙾𝙴𝚁𝚂
+
+### TELEGRAM Accounts㋛︎
+
+##### GAURAV ☻︎ ☞︎︎︎ <a href="https://t.me/@tunning_Gaurav"> <img src="https://img.shields.io/badge/GAURAV-leaderdev-black?style=social&logo=telegram" alt="DEVELOPER" /></a>
+
+
+##### YASH ☻︎ ☞︎︎︎ <a href="https://t.me/Itzmeyaxh"> <img src="https://img.shields.io/badge/YASH-dev-blue?style=social&logo=telegram" alt="DEVELOPER" /></a> 
+
+
+## Github Accounts㋛
+
+#### GAURAV- <a href="https://github.com/IisGaurav" alt="GAURAV"><img src="https://img.shields.io/badge/github-GAURAV-black?logo=github" /></a>
+
+#### YASH- <a href="https://github.com/YashBihari" alt="YASH"><img src="https://img.shields.io/badge/github-YASH-teal?logo=github" /></a>
