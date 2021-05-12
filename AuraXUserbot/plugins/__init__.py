@@ -1,7 +1,7 @@
-from userbot import *
-from userbot.Config import Config
-from userbot.helpers.functions import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot import *
+from AuraXUserbot.Config import Config
+from AuraXUserbot.helpers.functions import *
+from AuraXUserbot.cmdhelp import CmdHelp
 from AuraXBot.utils import *
 from telethon import events, version
 from telethon.events import NewMessage
