@@ -8,8 +8,8 @@ import telethon.utils
 from telethon.errors import rpcbaseerrors
 
 from AuraXBot.utils import admin_cmd, sudo_cmd, errors_handler
-from userbot import bot as AuraXBot
-from userbot import BOTLOG, BOTLOG_CHATID
+from AuraXUserbot import bot as AuraXBot
+from AuraXUserbot import BOTLOG, BOTLOG_CHATID
 
 
 @AuraXBot.on(admin_cmd(outgoing=True, pattern="del$"))
