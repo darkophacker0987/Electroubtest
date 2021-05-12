@@ -6,10 +6,10 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterDocument
 
-from userbot import bot
-from userbot.helpers.functions import deEmojify
+from AuraXUserbot import bot
+from AuraXUserbot.helpers.functions import deEmojify
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 # RegEx by https://t.me/c/1220993104/50065
 
