@@ -13,10 +13,10 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-#from userbot import CMD_HELP
-from userbot.Config import Config
+#from AuraXUserbot import CMD_HELP
+from AuraXUserbot.Config import Config
 from AuraXBot.utils import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 KANGING_STR = [
     "Using Witchery to kang this sticker...",
