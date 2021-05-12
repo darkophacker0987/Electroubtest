@@ -14,7 +14,7 @@ from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
 
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 
