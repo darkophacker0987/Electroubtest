@@ -18,9 +18,9 @@ import urllib
 import requests
 from telethon.tl import functions
 
-from userbot import CMD_HELP
+from AuraXUserbot import CMD_HELP
 from AuraXBot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 COLLECTION_STRING1 = [
     "awesome-batman-wallpapers",
