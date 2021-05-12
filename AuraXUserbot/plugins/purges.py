@@ -3,7 +3,7 @@ import asyncio
 import telethon.utils
 from telethon import events
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 from uniborg.util import re
 
 
