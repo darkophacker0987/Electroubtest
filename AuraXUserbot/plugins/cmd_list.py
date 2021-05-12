@@ -2,8 +2,8 @@ import asyncio
 import io
 
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import bot as AuraXBot
-from userbot import ALIVE_NAME
+from AuraXUserbot import bot as AuraXBot
+from AuraXUserbot import ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
 AuraX_logo = "./AURAX/AuraXBot_logo.jpg"
