@@ -1,5 +1,5 @@
 from AuraXBot.utils import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern=r"shout", outgoing=True))
