@@ -2,7 +2,7 @@
 Syntax: .github USERNAME"""
 import requests
 
-from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from AuraXUserbot.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 
 
