@@ -2,9 +2,9 @@
 import os
 import asyncio
 
-from userbot import CmdHelp
+from AuraXUserbot import CmdHelp
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot import bot as AuraXBot
+from AuraXUserbot import bot as AuraXBot
 
 
 @AuraXBot.on(admin_cmd(pattern=r"unpack", outgoing=True))
