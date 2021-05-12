@@ -3,8 +3,8 @@ import re
 
 from telethon import events
 
-from userbot import bot
-from userbot.Config import Config
+from AuraXUserbot import bot
+from AuraXUserbot.Config import Config
 
 
 def forwards():
