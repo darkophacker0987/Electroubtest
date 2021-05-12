@@ -5,9 +5,9 @@
 import os
 import shutil
 
-from userbot.google_imgs import googleimagesdownload
+from AuraXUserbot.google_imgs import googleimagesdownload
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot.Config import Config
+from AuraXUserbot.Config import Config
 
 async def reply_id(event):
     reply_to_id = None
