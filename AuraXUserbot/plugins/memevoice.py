@@ -6,10 +6,10 @@
 
 import re
 
-from userbot import bot
+from AuraXUserbot import bot
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
-from userbot.helpers.functions import deEmojify
+from AuraXUserbot.cmdhelp import CmdHelp
+from AuraXUserbot.helpers.functions import deEmojify
 
 
 @bot.on(admin_cmd(pattern="mev(?: |$)(.*)", outgoing=True))
