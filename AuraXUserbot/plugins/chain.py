@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 from telethon.tl.functions.messages import SaveDraftRequest
 
-from userbot import CMD_HELP
+from AuraXUserbot import CMD_HELP
 from AuraXBot.utils import admin_cmd, sudo_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="chain$"))
