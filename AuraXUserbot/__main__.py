@@ -1,13 +1,13 @@
-from userbot import bot
+from AuraXUserbot import bot
 from sys import argv
 import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 from telethon import TelegramClient
 from var import Var
-from userbot.Config import Config
-from userbot.utils import load_module
-from userbot import LOAD_PLUG, LOGS, AuraXversion
+from AuraXUserbot.Config import Config
+from AuraXUserbot.utils import load_module
+from AuraXUserbot import LOAD_PLUG, LOGS, AuraXversion
 from pathlib import Path
 import asyncio
 import telethon.utils
