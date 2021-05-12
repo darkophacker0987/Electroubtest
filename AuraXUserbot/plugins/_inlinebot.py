@@ -23,10 +23,10 @@ from telethon.events import InlineQuery, callbackquery
 from telethon.sync import custom
 from telethon.tl.functions.channels import JoinChannelRequest
 
-from userbot import *
-from userbot.cmdhelp import *
+from AuraXUserbot import *
+from AuraXUserbot.cmdhelp import *
 from AuraXBot.utils import *
-from userbot.Config import Config
+from AuraXUserbot.Config import Config
 
 AuraX_row = Config.BUTTONS_IN_HELP
 AuraX_emoji = Config.EMOJI_IN_HELP
