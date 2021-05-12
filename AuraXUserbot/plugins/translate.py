@@ -7,7 +7,7 @@ import emoji
 from googletrans import Translator
 
 from AuraXBot.utils import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="trt ?(.*)"))
 @bot.on(sudo_cmd(pattern="trt ?(.*)", allow_sudo=True))
