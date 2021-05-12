@@ -4,9 +4,9 @@
 
 
 import asyncio
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
-from userbot import *
+from AuraXUserbot import *
 from AuraXBot.utils import *
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
