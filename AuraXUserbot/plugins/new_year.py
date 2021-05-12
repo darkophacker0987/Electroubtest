@@ -9,11 +9,11 @@ from asyncio import sleep
 # credits to aura, john snow
 import asyncio
 # credits to aura, john snow
-from userbot import CMD_HELP, ALIVE_NAME
+from AuraXUserbot import CMD_HELP, ALIVE_NAME
 # credits to aura, john snow
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 # credits to aura, john snow
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 # credits to aura, john snow
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
 # credits to aura, john snow
