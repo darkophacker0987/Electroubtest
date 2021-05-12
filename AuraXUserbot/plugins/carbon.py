@@ -6,10 +6,10 @@ from urllib.parse import quote_plus
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from userbot import ALIVE_NAME, CMD_HELP
-from userbot.helpers.functions import deEmojify
+from AuraXUserbot import ALIVE_NAME, CMD_HELP
+from AuraXUserbot.helpers.functions import deEmojify
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
 
