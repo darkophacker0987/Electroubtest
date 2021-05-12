@@ -19,7 +19,7 @@
     - Install git package
            `pkg install git`
     - Clone this repository.
-           `git clone https://github.com/AuraXNetwork/AuraXBot.git`
+           `git clone https://github.com/PyCodents/AuraXUserbot.git`
     - Then Do
            `cd AuraXBot`
     - Run String Generator By
@@ -99,7 +99,7 @@ notifications in Update Channel.
 
 Copyright (C) 2021 AuraXNetwork
 
-Poject [AuraXBot](https://github.com/AuraXNetwork/AuraXBot) is free software: you can redistribute it and/or modify
+Poject [AuraXBot](https://github.com/PyCodents/AuraXUserbot) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.

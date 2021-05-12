@@ -623,7 +623,7 @@ async def vapor(vpr):
 @bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await edit_or_reply(e, "Click [here](https://github.com/AuraXNetwork/AuraXBot) to open this 🔥**Lit AF!!**🔥 __AuraXBot__ Repo.. Join channel :- @AuraXUserbot")
+        await edit_or_reply(e, "Click [here](https://github.com/PyCodents/AuraXUserbot) to open this 🔥**Lit AF!!**🔥 __AuraXBot__ Repo.. Join channel :- @AuraXUserbot")
 
 
 @bot.on(admin_cmd(pattern="str(?: |$)(.*)", outgoing=True))
