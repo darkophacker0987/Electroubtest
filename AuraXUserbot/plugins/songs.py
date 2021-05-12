@@ -9,10 +9,10 @@ import asyncio
 import re
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from userbot import bot
+from AuraXUserbot import bot
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply, progress
-from userbot.cmdhelp import CmdHelp
-from userbot.helpers.functions import deEmojify
+from AuraXUserbot.cmdhelp import CmdHelp
+from AuraXUserbot.helpers.functions import deEmojify
 
 @bot.on(admin_cmd(pattern="lyrics(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="lyrics(?: |$)(.*)", allow_sudo=True))
