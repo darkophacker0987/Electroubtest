@@ -6,8 +6,8 @@ import time
 from datetime import datetime
 
 from AuraXBot.utils import admin_cmd, sudo_cmd, progress
-from userbot import CMD_HELP
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot.cmdhelp import CmdHelp
 
 FF_MPEG_DOWN_LOAD_MEDIA_PATH = "./downloads/AuraXBot.media.ffmpeg"
 
