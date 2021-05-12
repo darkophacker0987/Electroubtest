@@ -8,11 +8,11 @@ import time
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-from userbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
-from userbot import ALIVE_NAME, CUSTOM_PMPERMIT, AuraX_ID
-from userbot.Config import Config
+from AuraXUserbot.plugins.sql_helper import pmpermit_sql as pmpermit_sql
+from AuraXUserbot import ALIVE_NAME, CUSTOM_PMPERMIT, AuraX_ID
+from AuraXUserbot.Config import Config
 from AuraXBot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 PM_TRUE_FALSE = Config.PM_DATA
 
