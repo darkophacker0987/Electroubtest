@@ -14,11 +14,11 @@ from telethon.tl.types import (ChannelParticipantsAdmins,
                                    ChatBannedRights,
                                      MessageEntityMentionName,
                                        MessageMediaPhoto)
-from userbot.utils import register, errors_handler
-from userbot.utils import admin_cmd
-from userbot import CMD_HELP
-from userbot.cmdhelp import CmdHelp
-from userbot import bot as borg
+from AuraXUserbot.utils import register, errors_handler
+from AuraXUserbot.utils import admin_cmd
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot.cmdhelp import CmdHelp
+from AuraXUserbot import bot as borg
 async def get_full_user(event):  
     args = event.pattern_match.group(1).split(':', 1)
     extra = None
