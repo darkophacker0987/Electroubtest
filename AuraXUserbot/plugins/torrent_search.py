@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import cfscrape  # https://github.com/Anorov/cloudflare-scrape
 
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 from AuraXBot.utils import humanbytes, admin_cmd
 
 
