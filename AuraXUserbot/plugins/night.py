@@ -7,9 +7,9 @@ import datetime
 from telethon import events
 from telethon.tl import functions, types
 
-from userbot import ALIVE_NAME
+from AuraXUserbot import ALIVE_NAME
 from AuraXBot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 global USER_night  # pylint:disable=E0602
 global night_time  # pylint:disable=E0602
