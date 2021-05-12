@@ -1,7 +1,7 @@
-from userbot import bot, CMD_HELP, ALIVE_NAME
+from AuraXUserbot import bot, CMD_HELP, ALIVE_NAME
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 import html
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
@@ -93,7 +93,7 @@ async def gban(userbot):
                 f"`First Grow Some Balls To Gban My Creater🤫🚶`"
             )
         try:
-            from userbot.modules.sql_helper.gmute_sql import gmute
+            from AuraXUserbot.modules.sql_helper.gmute_sql import gmute
         except:
             pass
         try:
@@ -159,7 +159,7 @@ async def gunban(userbot):
         if user.id == 1100735944:
             return await AuraXBot.edit("**You need to grow some balls to gban / ungban my creator**")
         try:
-            from userbot.modules.sql_helper.gmute_sql import ungmute
+            from AuraXUserbot.modules.sql_helper.gmute_sql import ungmute
         except:
             pass
         try:
@@ -196,7 +196,7 @@ async def gunban(userbot):
 async def handler(aura): 
    if aura.user_joined or aura.user_added:      
        try:       	
-         from userbot.plugins.sql_helper.gmute_sql import is_gmuted
+         from AuraXUserbot.plugins.sql_helper.gmute_sql import is_gmuted
          guser = await aura.get_user()      
          gmuted = is_gmuted(guser.id)             
        except:      
