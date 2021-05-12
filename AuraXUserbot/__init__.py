@@ -3,8 +3,8 @@ import sys
 import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from userbot.helpers import functions as simpdef
-from userbot.Config import Config
+from AuraXUserbot.helpers import functions as simpdef
+from AuraXUserbot.Config import Config
 from var import Var
 
 StartTime = time.time()
@@ -207,6 +207,6 @@ AFKREASON = None
 SUDO_LIST = {}
 
 
-from userbot.helpers import *
-from userbot.helpers import functions as AuraXdef
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.helpers import *
+from AuraXUserbot.helpers import functions as AuraXdef
+from AuraXUserbot.cmdhelp import CmdHelp
