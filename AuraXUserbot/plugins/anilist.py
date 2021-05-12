@@ -9,9 +9,9 @@ import re
 
 import requests
 
-from userbot import *
+from AuraXUserbot import *
 from AuraXBot.utils import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 async def callAPI(search_str):
