@@ -62,7 +62,7 @@ class CmdHelp:
         Brings results.
         """
 
-        result = f"**📗 File :** `{self.FILE}`\n"
+        result = f"**PLUGINS :** `{self.FILE}`\n"
         if self.WARNING == "" and self.INFO == "":
             result += f"**⬇️ Official:** {'✅' if self.IS_OFFICIAL else '❌'}\n\n"
         else:
