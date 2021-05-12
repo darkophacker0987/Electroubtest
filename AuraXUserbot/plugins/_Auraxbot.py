@@ -1,7 +1,7 @@
 """AuraXBot Help Command"""
 
-from userbot import *
-from userbot import CMD_HELP
+from AuraXUserbot import *
+from AuraXUserbot import CMD_HELP
 from AuraXBot.utils import *
 
 
