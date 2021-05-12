@@ -19,7 +19,7 @@
     - Install git package
            `pkg install git`
     - Clone this repository.
-           `git clone https://github.com/PyCodents/AuraXUserbot.git`
+           `git clone https://github.com/PyCodents/AuraXBot.git`
     - Then Do
            `cd AuraXBot`
     - Run String Generator By
@@ -99,7 +99,7 @@ notifications in Update Channel.
 
 Copyright (C) 2021 AuraXNetwork
 
-Poject [AuraXBot](https://github.com/PyCodents/AuraXUserbot) is free software: you can redistribute it and/or modify
+Poject [AuraXBot](https://github.com/PyCodents/AuraXBot) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -130,19 +130,3 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 </details>
 
-
-# 𝙳𝙴𝚅𝙴𝙻𝙿𝙾𝙴𝚁𝚂
-
-### TELEGRAM Accounts㋛︎
-
-##### GAURAV ☻︎ ☞︎︎︎ <a href="https://t.me/Stunning_Gaurav"> <img src="https://img.shields.io/badge/GAURAV-leaderdev-black?style=social&logo=telegram" alt="DEVELOPER" /></a>
-
-
-##### YASH ☻︎ ☞︎︎︎ <a href="https://t.me/Itzmeyaxh"> <img src="https://img.shields.io/badge/YASH-dev-blue?style=social&logo=telegram" alt="DEVELOPER" /></a> 
-
-
-## Github Accounts㋛
-
-#### GAURAV- <a href="https://github.com/IisGaurav" alt="GAURAV"><img src="https://img.shields.io/badge/github-GAURAV-black?logo=github" /></a>
-
-#### YASH- <a href="https://github.com/YashBihari" alt="YASH"><img src="https://img.shields.io/badge/github-YASH-teal?logo=github" /></a>
