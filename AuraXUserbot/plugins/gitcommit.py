@@ -11,8 +11,8 @@ from datetime import datetime
 
 from github import Github
 
-from userbot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from AuraXUserbot.cmdhelp import CmdHelp
 
 GIT_TEMP_DIR = "./userbot/temp/"
 
@@ -91,7 +91,7 @@ async def git_commit(file_name, AuraXBot):
         
         
 CmdHelp("github").add_command(
-  'commit', '<reply to a file>', 'Uploads the file on github repo as provided in Heroku Var "GIT_REPO_NAME". In short makes a commit to git repo from Userbot'
+  'commit', '<reply to a file>', 'Uploads the file on github repo as provided in Heroku Var "GIT_REPO_NAME". In short makes a commit to git repo from AuraXUserbot'
 ).add_command(
   'github', '<git username>', 'Fetches the details of the given git username'
 ).add()
