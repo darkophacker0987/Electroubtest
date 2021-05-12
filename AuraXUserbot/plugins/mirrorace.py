@@ -10,7 +10,7 @@ from datetime import datetime
 import aiohttp
 import requests
 from AuraXBot.utils import admin_cmd, progress, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="ma ?(.*)", outgoing=True))
