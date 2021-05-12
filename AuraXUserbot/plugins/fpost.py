@@ -3,9 +3,9 @@ import string
 from telethon.tl.types import Channel
 
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import CMD_HELP
-from userbot.cmdhelp import CmdHelp
-from userbot.Config import Config
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot.cmdhelp import CmdHelp
+from AuraXUserbot.Config import Config
 
 global msg_cache
 msg_cache = {}
