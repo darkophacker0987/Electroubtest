@@ -19,9 +19,9 @@ from telethon.tl.functions.messages import GetFullChatRequest, GetHistoryRequest
 from telethon.tl.types import ChannelParticipantsAdmins, MessageActionChannelMigrateFrom
 from telethon.utils import get_input_location
 
-from userbot import CMD_HELP
+from AuraXUserbot import CMD_HELP
 from AuraXBot.utils import admin_cmd, errors_handler, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="chatinfo(?: |$)(.*)", outgoing=True))
