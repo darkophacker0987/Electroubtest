@@ -7,8 +7,8 @@
 # no offence. Made for fun purpose only
 # Now in AuraXBot
 
-from userbot import CMD_HELP
-from userbot.helpers.functions import (
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot.helpers.functions import (
     changemymind,
     deEmojify,
     kannagen,
@@ -22,7 +22,7 @@ from userbot.helpers.functions import (
     dani,
 )
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern=r"tweet(?: |$)(.*)"))
