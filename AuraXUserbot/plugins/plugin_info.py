@@ -5,9 +5,9 @@
 #
 """ Userbot plugin_info command """
 
-from userbot import CMD_HELP
+from AuraXUserbot import CMD_HELP
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern=r"plinfo(?: |$)(.*)"))
