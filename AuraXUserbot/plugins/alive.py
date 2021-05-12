@@ -1,6 +1,6 @@
-from userbot import *
+from AuraXUserbot import *
 from AuraXBot.utils import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 from telethon import events, version
 from telethon.events import NewMessage
 from telethon.tl.custom import Dialog
