@@ -4,7 +4,7 @@ import PIL.ImageOps
 from PIL import Image, ImageDraw, ImageFont
 
 from AuraXBot import CmdHelp
-from userbot.Config import Config
+from AuraXUserbot.Config import Config
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
 
 TEMP_DIR = os.environ.get("TEMP_DIR", "./temp/")
