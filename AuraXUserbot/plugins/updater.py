@@ -4,7 +4,7 @@ import sys
 
 import git
 
-from userbot.Config import Config
+from AuraXUserbot.Config import Config
 from AuraXBot.utils import admin_cmd
 
 # -- Constants -- #
