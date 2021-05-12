@@ -1,10 +1,10 @@
 from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
 from telethon.tl.types import ChatBannedRights
 
-from userbot import ALIVE_NAME, CMD_HELP
-from userbot.events import errors_handler, register
+from AuraXUserbot import ALIVE_NAME, CMD_HELP
+from AuraXUserbot.events import errors_handler, register
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 DEFAULTUSER = (
