@@ -9,9 +9,9 @@ from datetime import datetime
 
 from pySmartDL import SmartDL
 
-from userbot import ALIVE_NAME, CMD_HELP
+from AuraXUserbot import ALIVE_NAME, CMD_HELP
 from AuraXBot.utils import admin_cmd, humanbytes, progress, sudo_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
 
