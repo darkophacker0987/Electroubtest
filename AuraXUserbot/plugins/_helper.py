@@ -1,10 +1,10 @@
-from userbot.Config import Config
+from AuraXUserbot.Config import Config
 import asyncio
 
 import requests
 from telethon import functions
 
-from userbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
+from AuraXUserbot import ALIVE_NAME, CMD_LIST, SUDO_LIST
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
