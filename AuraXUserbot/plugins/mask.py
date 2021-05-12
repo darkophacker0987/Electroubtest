@@ -10,8 +10,8 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from userbot import CMD_HELP
-from userbot.helpers.functions import (
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot.helpers.functions import (
     awooify,
     baguette,
     convert_toimage,
@@ -19,7 +19,7 @@ from userbot.helpers.functions import (
     lolice,
 )
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="mask$", outgoing=True))
