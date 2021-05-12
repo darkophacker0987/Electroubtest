@@ -4,9 +4,9 @@ from datetime import datetime
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
-from userbot import ALIVE_NAME
+from AuraXUserbot import ALIVE_NAME
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 AuraX_NAME = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
 
