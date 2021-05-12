@@ -6,8 +6,8 @@ from telethon import events
 from telethon import functions, types
 from telethon.tl.types import InputMessagesFilterDocument
 from AuraXBot.utils import *
-from userbot import *
-from userbot import bot as AuraXBot
+from AuraXUserbot import *
+from AuraXUserbot import bot as AuraXBot
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
@@ -132,7 +132,7 @@ async def load(event):
 CmdHelp("core").add_command(
   "install", "<reply to a .py file>", "Installs the replied python file if suitable to userbot codes. (TEMPORARILY DISABLED AS HACKERS MAKE YOU INSTALL SOME PLUGINS AND GET YOUR DATA)"
 ).add_command(
-  "uninstall", "<plugin name>", "Uninstalls the given plugin from userbot. To get that again do .restart", "uninstall alive"
+  "uninstall", "<plugin name>", "Uninstalls the given plugin from AuraXUserbot. To get that again do .restart", "uninstall alive"
 ).add_command(
   "load", "<plugin name>", "Loades the unloaded plugin to your userbot", "load alive"
 ).add_command(
