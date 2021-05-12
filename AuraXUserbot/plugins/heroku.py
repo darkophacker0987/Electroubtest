@@ -5,10 +5,10 @@ import os
 import heroku3
 import requests
 
-from userbot import CMD_HELP
-from userbot.Config import Config
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot.Config import Config
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
