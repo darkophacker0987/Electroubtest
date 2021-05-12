@@ -7,8 +7,8 @@ import sys
 import traceback
 
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot import *
+from AuraXUserbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern="exec(?: |$|\n)(.*)", command="exec"))
 @bot.on(sudo_cmd(pattern="exec(?: |$|\n)(.*)", command="exec", allow_sudo=True))
