@@ -17,10 +17,10 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from telethon.tl.types import DocumentAttributeVideo
 
-from userbot import CMD_HELP
-from userbot.Config import Config
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot.Config import Config
 from AuraXBot.utils import admin_cmd, progress
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "extracted/"
