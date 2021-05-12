@@ -7,9 +7,9 @@ By: @Zero_cool7870
 import os
 import subprocess
 
-from userbot import CMD_HELP
+from AuraXUserbot import CMD_HELP
 from AuraXBot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 @borg.on(admin_cmd(pattern=r"getc"))
 async def get_media(event):
