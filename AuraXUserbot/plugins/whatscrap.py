@@ -1,6 +1,6 @@
 """Syntax: .whatscrapp as reply to a message copied from @WhatsCRApp"""
 from AuraXBot.utils import *
-from userbot.cmdhelp import *
+from AuraXUserbot.cmdhelp import *
 # when you are tight on schedule...
 # and also lazy af!!
 
