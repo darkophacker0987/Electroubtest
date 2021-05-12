@@ -7,8 +7,8 @@ import math
 
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
 
-from userbot import CmdHelp
-from userbot import bot as AuraXBot
+from AuraXUserbot import CmdHelp
+from AuraXUserbot import bot as AuraXBot
 
 
 @AuraXBot.on(admin_cmd(pattern="sin ?(.*)"))
