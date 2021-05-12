@@ -8,9 +8,9 @@ import urllib
 
 import requests
 
-from userbot import *
+from AuraXUserbot import *
 from AuraXBot.utils import *
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd("boobs$"))
 @bot.on(sudo_cmd(pattern="boobs$", allow_sudo=True))
