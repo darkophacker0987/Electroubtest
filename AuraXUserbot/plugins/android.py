@@ -10,9 +10,9 @@ import re
 
 from bs4 import BeautifulSoup
 from requests import get
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
-from userbot import *
+from AuraXUserbot import *
 from AuraXBot.utils import *
 
 GITHUB = "https://github.com"
