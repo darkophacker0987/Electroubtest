@@ -7,8 +7,8 @@ from PIL import Image, ImageDraw, ImageFont
 import PIL.ImageOps
 
 from AuraXBot.utils import admin_cmd, sudo_cmd
-from userbot import CmdHelp, CMD_HELP, LOGS, bot as AuraXBot
-from userbot.helpers.functions import (
+from AuraXUserbot import CmdHelp, CMD_HELP, LOGS, bot as AuraXBot
+from AuraXUserbot.helpers.functions import (
     convert_toimage,
     convert_tosticker,
     flip_image,
