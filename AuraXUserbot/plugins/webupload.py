@@ -2,7 +2,7 @@
 import asyncio
 import time
 from AuraXBot.utils import admin_cmd
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 @bot.on(admin_cmd(pattern="webup ?(.+?|) (?:--)(anonfiles|transfer|filebin|anonymousfiles|megaupload|bayfiles)"
