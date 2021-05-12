@@ -13,11 +13,11 @@ from pytz import country_names as c_n
 from pytz import country_timezones as c_tz
 from pytz import timezone as tz
 
-from userbot import CMD_HELP
-from userbot import OPEN_WEATHER_MAP_APPID as OWM_API
-from userbot.events import errors_handler
+from AuraXUserbot import CMD_HELP
+from AuraXUserbot import OPEN_WEATHER_MAP_APPID as OWM_API
+from AuraXUserbot.events import errors_handler
 from AuraXBot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from userbot.cmdhelp import CmdHelp
+from AuraXUserbot.cmdhelp import CmdHelp
 
 
 # ===== CONSTANT =====
