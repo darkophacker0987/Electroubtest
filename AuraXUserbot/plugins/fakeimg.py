@@ -1,5 +1,5 @@
 import requests
-from userbot import CmdHelp
+from AuraXUserbot import CmdHelp
 from AuraXBot.utils import edit_or_reply, admin_cmd, sudo_cmd
 import os
 
