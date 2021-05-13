@@ -1,4 +1,4 @@
-#    Copyright (C) @AupRemE_AnanD 2021-2022
+#    Copyright (C) @SupRemE_AnanD 2021-2022
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
