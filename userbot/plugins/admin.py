@@ -142,7 +142,7 @@ async def promote(promt):
     AuraXevent = await edit_or_reply(promt, "Promoting...")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "THARKI"
+        rank = "AURAX"
     if not user:
         return
     try:
