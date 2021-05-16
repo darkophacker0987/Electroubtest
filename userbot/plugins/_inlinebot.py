@@ -31,7 +31,7 @@ from userbot.Config import Config
 AuraX_row = Config.BUTTONS_IN_HELP
 AuraX_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
-# AuraXBot
+# AuraXUserbot
 
 def button(page, modules):
     Row = AuraX_row
@@ -55,18 +55,18 @@ def button(page, modules):
     buttons.append(
         [
             custom.Button.inline(
-               f"⬅️ 𝐁𝐀𝐂𝐊 {AuraX_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
+               f"{AuraX_emoji} 𝐁𝐀𝐂𝐊 {AuraX_emoji}", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
             custom.Button.inline(
                f"•{AuraX_emoji} ❌ {AuraX_emoji}•", data="close"
             ),
             custom.Button.inline(
-               f"{AuraX_emoji} 𝐍𝐄𝐗𝐓 ➡️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
+               f"{AuraX_emoji} 𝐍𝐄𝐗𝐓 {AuraX_emoji}", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
         ]
     )
     return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in AuraXBot channel to get this module work...
+    # Changing this line may give error in bot as i added some special cmds in AuraXUserbot channel to get this module work...
 
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -80,7 +80,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running AuraXBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running AuraXUserbot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -95,7 +95,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "@AuraXUserbot",
-                text="""**Hey! This is [AuraXBot.](https://t.me/AuraXUserbot) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [AuraXUserbot.](https://t.me/AuraXUserbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/AuraXUserbot"),
@@ -105,7 +105,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/PyCodents/AuraXBot"),
+                            "✨ REPO ✨", "https://github.com/PyCodents/AuraXUserbot"),
                     ],
                 ],
                 link_preview=False,
@@ -116,14 +116,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXBot AND USE © AuraXBot™ ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C) AuraXUserbot ",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [AuraXBot](https://t.me/AuraXUserbot) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday** [AuraXUserbot](https://t.me/AuraXUserbot) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -132,10 +132,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_AuraX(event,
-              "⚜️AuraXBot Menu Provider Is now Closed⚜️\n\n         **[©AuraXBot](t.me/AuraXUserbot)**", 5, link_preview=False
+              "**AuraXUserbot Help Menu**\n\n         **[(C) AuraXUserbot](t.me/AuraXUserbot)**", 5, link_preview=False
             )
         else:
-            AuraX_alert = "Ho gya aapka? Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. ©AuraXBot"
+            AuraX_alert = "Ho gya aapka? Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. (C) AuraXUserbot"
             await event.answer(AuraX_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -144,7 +144,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXBot AND USE ©AuraXBot ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C) AuraXUserbot ",
                 cache_time=0,
                 alert=True,
             )
@@ -154,7 +154,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "⚡ " + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
+                    "✘" + cmd[0],+ "✘", data=f"commands[{commands}[{page}]]({cmd[0]})"
                 )
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
@@ -164,9 +164,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
 
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"page({page})")])
+        buttons.append([custom.Button.inline(f"{AuraX_emoji} 𝐁𝐀𝐂𝐊 {AuraX_emoji}", data=f"page({page})")])
         await event.edit(
-            f"**📗 File:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
+            f"**🗂 Modules:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
             buttons=buttons,
             link_preview=False,
         )
@@ -177,7 +177,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXBot AND USE ©AuraXBot ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C) AuraXUserbot ",
                 cache_time=0,
                 alert=True,
             )
@@ -186,7 +186,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(2).decode("UTF-8"))
         commands = event.data_match.group(3).decode("UTF-8")
 
-        result = f"**📗 File:** `{cmd}`\n"
+        result = f"**🗂 Modules:** `{cmd}`\n"
         if CMD_HELP_BOT[cmd]["info"]["info"] == "":
             if not CMD_HELP_BOT[cmd]["info"]["warning"] == "":
                 result += f"**⬇️ Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n"
@@ -214,7 +214,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         await event.edit(
             result,
             buttons=[
-                custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"Information[{page}]({cmd})")
+                custom.Button.inline(f"{AuraX_emoji} 𝐁𝐀𝐂𝐊 {AuraX_emoji}", data=f"Information[{page}]({cmd})")
             ],
             link_preview=False,
         )
