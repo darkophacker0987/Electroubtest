@@ -1,8 +1,17 @@
 import time
-
+from userbot import *
+from AuraXBot.utils import *
+from userbot.cmdhelp import CmdHelp
+from telethon import events, version
+from telethon.events import NewMessage
+from telethon.tl.custom import Dialog
+from telethon.tl.types import Channel, Chat, User
 from telethon import version
 from userbot import ALIVE_NAME, StartTime, AuraXversion
 from AuraXBot.utils import admin_cmd, edit_or_reply, sudo_cmd
+
+
+#-------------------------------------------------------------------------------
 
 
 async def reply_id(event):
@@ -13,10 +22,15 @@ async def reply_id(event):
         reply_to_id = event.reply_to_msg_id
     return reply_to_id
 
+ludosudo = Config.SUDO_USERS
+if ludosudo:
+    sudou = "True"
+else:
+    sudou = "False"
 
 DEFAULTUSER = ALIVE_NAME or "AuraX User"
 AuraX_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ʟɛɢɛռɖaʀʏ_ᴀғ_ɦɛʟʟɮօt"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Legendary AuraXBot"
 
 USERID = bot.uid
 
@@ -54,8 +68,8 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="aurax$"))
-@bot.on(sudo_cmd(pattern="aurax$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="alive$"))
+@bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -63,12 +77,19 @@ async def amireallyalive(alive):
 
     if AuraX_IMG:
         AuraX_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
-        AuraX_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
+        
         AuraX_caption += f"     __**BOT STATUS**__\n\n"
-        AuraX_caption += f"**★ Telethon version :** `{version.__version__}`\n"
-        AuraX_caption += f"**★ AuraXBot :**`{AuraXversion}`\n"
-        AuraX_caption += f"**★ Uptime :** `{uptime}\n`"
-        AuraX_caption += f"**★ Master:** {mention}\n"
+        AuraX_caption += f"**┏━━━━━━━━━━━━━┓**\n"
+        AuraX_caption += f"**┣★ Telethon version :** `{version.__version__}`\n"
+        AuraX_caption += f"**┣★ AuraXBot :**`{AuraXversion}`\n"
+        AuraX_caption += f"**┣★ Uptime :** `{uptime}\n`"
+        AuraX_caption += f"**┣★ Master:** {mention}\n"
+        AuraX_caption += f"**┣★ Sudo       : `{sudou}`**\n"
+        AuraX_caption += f"**┣★ Channel   : [Join Here](https://t.me/AuraXUserbot)**\n"
+        AuraX_caption += f"**┣★ Creater    : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
+        AuraX_caption += f"**┗━━━━━━━━━━━━━┛**\n"
+        AuraX_caption += "[✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)"
+
         await alive.client.send_file(
             alive.chat_id, AuraX_IMG, caption=AuraX_caption, reply_to=reply_to_id
         )
@@ -77,10 +98,21 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
-            f"      __**BOT STATUS**__\n\n"
-            f"**★ Telethon Version :** `{version.__version__}`\n"
-            f"**★ AuraXBot:** `{AuraXversion}`\n"
-            f"**★ Uptime :** `{uptime}\n`"
-            f"**★ Master:** {mention}\n",
+            f"     __**BOT STATUS**__\n\n"
+            f"**┏━━━━━━━━━━━━━┓**\n"
+            f"**┣★ Telethon version :** `{version.__version__}`\n"
+            f"**┣★ AuraXBot :**`{AuraXversion}`\n"
+            f"**┣★ Uptime :** `{uptime}\n`"
+            f"**┣★ Master:** {mention}\n"
+            f"**┣★ Sudo       : `{sudou}`**\n"
+            f"**┣★ Channel   : [Join Here](https://t.me/AuraXUserbot)**\n"
+            f"**┣★ Creater    : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
+            f"**┗━━━━━━━━━━━━━┛**\n"
+            "[✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)",
         )
+
+CmdHelp("alive").add_command(
+  'alive', None, 'Check weather the bot is alive or not'
+  ).add_info(
+  'Zinda Hai Kya Bro?'
+).add()
