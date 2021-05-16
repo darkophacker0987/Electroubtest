@@ -83,10 +83,10 @@ async def amireallyalive(alive):
         AuraX_caption += f"**┣★ Telethon version :** `{version.__version__}`\n"
         AuraX_caption += f"**┣★ AuraXBot :**`{AuraXversion}`\n"
         AuraX_caption += f"**┣★ Uptime :** `{uptime}\n`"
-        AuraX_caption += f"**┣★ Master:** {mention}\n"
         AuraX_caption += f"**┣★ Sudo       : `{sudou}`**\n"
         AuraX_caption += f"**┣★ Channel   : [Join Here](https://t.me/AuraXUserbot)**\n"
         AuraX_caption += f"**┣★ Creater    : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
+        AuraX_caption += f"**┣★ Master:** {mention}\n"
         AuraX_caption += f"**┗━━━━━━━━━━━━━┛**\n"
         AuraX_caption += "[✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)"
 
@@ -103,10 +103,10 @@ async def amireallyalive(alive):
             f"**┣★ Telethon version :** `{version.__version__}`\n"
             f"**┣★ AuraXBot :**`{AuraXversion}`\n"
             f"**┣★ Uptime :** `{uptime}\n`"
+            f"**┣★ Sudo : `{sudou}`**\n"
+            f"**┣★ Channel : [Join Here](https://t.me/AuraXUserbot)**\n"
+            f"**┣★ Creater : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
             f"**┣★ Master:** {mention}\n"
-            f"**┣★ Sudo       : `{sudou}`**\n"
-            f"**┣★ Channel   : [Join Here](https://t.me/AuraXUserbot)**\n"
-            f"**┣★ Creater    : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
             f"**┗━━━━━━━━━━━━━┛**\n"
             "[✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)",
         )
