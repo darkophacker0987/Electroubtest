@@ -1,4 +1,4 @@
-# PLUGIN MADE BY @AuraXOwner FOR AuraXBot
+# PLUGIN MADE BY @IisGaurav FOR AuraXBot
 # KEEP CREDITS ELSE GAY
 
 import random, re

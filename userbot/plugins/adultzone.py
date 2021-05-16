@@ -1,5 +1,5 @@
 # credits to userge
-# ported to AuraXBot by @AuraXOwner
+# ported to AuraXBot by @IisGaurav
 # will be adding more soon
 
 import asyncio

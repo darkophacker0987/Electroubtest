@@ -99,7 +99,7 @@ async def kang(args):
                 # pack
                 emoji = splat[1]
 
-        packname = f"HB_{user.username}_AuraXBot_{pack}"
+        packname = f"AB_{user.username}_AuraXBot_{pack}"
         packnick = (
             f"{AuraXBot} Vol.{pack}"
             if AuraXBot
@@ -135,7 +135,7 @@ async def kang(args):
                 x = await conv.get_response()
                 while "120" in x.text:
                     pack += 1
-                    packname = f"HB_{user.username}_by_{user.username}_{pack}"
+                    packname = f"AB_{user.username}_by_{user.username}_{pack}"
                     packnick = (
                         f"{AuraXBot} Vol.{pack}"
                         if AuraXBot

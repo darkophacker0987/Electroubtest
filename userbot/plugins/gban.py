@@ -10,7 +10,7 @@ from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 from telethon.events import ChatAction
 
-AuraXOwner = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
+IisGaurav = str(ALIVE_NAME) if ALIVE_NAME else "AuraX User"
 papa = borg.uid
 
 
@@ -120,7 +120,7 @@ async def gban(userbot):
     except:
         pass
     return await AuraXBot.edit(
-        f"[{user.first_name}](tg://user?id={user.id}) Beta majdur ko khodna aur [{AuraXOwner}](tg://user?id={papa}) ko chodna kabhi sikhana nhi.\n\n**Gban Successful 🔥\nAffected Chats😏 : {a} **"
+        f"[{user.first_name}](tg://user?id={user.id}) Beta majdur ko khodna aur [{IisGaurav}](tg://user?id={papa}) ko chodna kabhi sikhana nhi.\n\n**Gban Successful 🔥\nAffected Chats😏 : {a} **"
     )
 
 @bot.on(admin_cmd(pattern="ungban ?(.*)"))
