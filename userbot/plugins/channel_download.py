@@ -70,7 +70,7 @@ async def get_media(event):
     await event.edit("Downloaded " + output + " files.")
 
 
-CmdHelp("channel_download").add_command(
+CmdHelp("channeldl").add_command(
   'geta', 'channel username', 'will download all media from channel into your bot server but there is limit of 3000 to prevent API limits.'
 ).add_command(
   'getc', 'channel username', 'will download latest given number of media from channel into your bot server'
