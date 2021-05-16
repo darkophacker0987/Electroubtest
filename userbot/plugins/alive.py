@@ -34,7 +34,7 @@ pm_caption += f"**┣★ Channel   : [Join Here](https://t.me/AuraXUserbot)**\n"
 pm_caption += f"**┣★ Creater    : [AuraX Here](https://t.me/AuraXOwner)**\n"
 pm_caption += f"**┗━━━━━━━━━━━━━┛**\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)"
+pm_caption += "[✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
