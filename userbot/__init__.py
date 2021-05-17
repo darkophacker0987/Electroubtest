@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-AuraX_ID = 1837224931 or AuraX_ID = 1761900506 or AuraX_ID = 1642269125
+AuraX_ID = 1837224931 or  1761900506 or 1642269125
 
 """ PPE initialization. """
 
