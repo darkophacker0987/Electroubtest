@@ -30,7 +30,7 @@
 - Repl Run
 
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@itzgauravv/AuraXBot#main.py) 
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@iisgaurav/AuraXBot#main.py) 
 
     - Click On Generate string
     - Then Click On Green Play Button.
