@@ -116,7 +116,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C) AuraXUserbot ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C)AuraXUserbot ",
                 cache_time=0,
                 alert=True,
             )
@@ -132,10 +132,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_AuraX(event,
-              "**AuraXUserbot Help Menu**\n\n         **[(C) AuraXUserbot](t.me/AuraXUserbot)**", 5, link_preview=False
+              "**AuraXUserbot Help Menu**\n\n         **[(C)AuraXUserbot](t.me/AuraXUserbot)**", 5, link_preview=False
             )
         else:
-            AuraX_alert = "Ho gya aapka? Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. (C) AuraXUserbot"
+            AuraX_alert = "Ho gya aapka? Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. (C)AuraXUserbot"
             await event.answer(AuraX_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -144,7 +144,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C) AuraXUserbot ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C)AuraXUserbot ",
                 cache_time=0,
                 alert=True,
             )
@@ -166,7 +166,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
         buttons.append([custom.Button.inline(f"{AuraX_emoji} 𝐁𝐀𝐂𝐊 {AuraX_emoji}", data=f"page({page})")])
         await event.edit(
-            f"**🗂 Module:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
+            f"**🗂 Module:** `{commands}`\n**No. of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
             buttons=buttons,
             link_preview=False,
         )
@@ -177,7 +177,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C) AuraXUserbot ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN AuraXUserbot AND USE (C)AuraXUserbot ",
                 cache_time=0,
                 alert=True,
             )
