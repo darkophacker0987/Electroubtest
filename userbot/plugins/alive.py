@@ -88,7 +88,7 @@ async def amireallyalive(alive):
         AuraX_caption += f"**┣★ Creater    : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
         AuraX_caption += f"**┣★ Master:** {mention}\n"
         AuraX_caption += f"**┗━━━━━━━━━━━━━┛**\n"
-        AuraX_caption += "[✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)"
+        AuraX_caption += "[✨REPO✨](https://github.com/iisgaurav/AuraXBot) 🔹 [📜License📜](https://github.com/iisgaurav/AuraXBot/blob/master/LICENSE)"
 
         await alive.client.send_file(
             alive.chat_id, AuraX_IMG, caption=AuraX_caption, reply_to=reply_to_id
@@ -108,7 +108,7 @@ async def amireallyalive(alive):
             f"**┣★ Creater : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
             f"**┣★ Master:** {mention}\n"
             f"**┗━━━━━━━━━━━━━┛**\n"
-            "[✨REPO✨](https://github.com/PyCodents/AuraXBot) 🔹 [📜License📜](https://github.com/PyCodents/AuraXBot/blob/master/LICENSE)",
+            "[✨REPO✨](https://github.com/iisgaurav/AuraXBot) 🔹 [📜License📜](https://github.com/iisgaurav/AuraXBot/blob/master/LICENSE)",
         )
 
 CmdHelp("alive").add_command(
