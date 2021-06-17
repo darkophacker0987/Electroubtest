@@ -59,7 +59,7 @@ async def lg1(AuraX):
     file_name = "AuraXBot.png"
     img.save(file_name, "png")
     await bot.send_file(
-        hellevent.chat_id,
+        AuraX.chat_id,
         file_name,
         caption=f"**Made By :** [{DEFAULTUSER}](tg://user?id={aura})",
     )
