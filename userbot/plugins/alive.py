@@ -78,17 +78,13 @@ async def amireallyalive(alive):
     if AuraX_IMG:
         AuraX_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         
-        AuraX_caption += f"     __**======BOT STATUS=====**__\n"
-        AuraX_caption += f"**┏━━━━━━━━━━━━━┓**\n"
-        AuraX_caption += f"**┣➬ Telethon :** `{version.__version__}`\n"
-        AuraX_caption += f"**┣➬ AuraXBot :**`{AuraXversion}`\n"
-        AuraX_caption += f"**┣➬ Uptime :** `{uptime}\n`"
-        AuraX_caption += f"**┣➬ Sudo       : `{sudou}`**\n"
-        AuraX_caption += f"**┣➬ Channel   : [Join Here](https://t.me/AuraXUserbot)**\n"
-        AuraX_caption += f"**┣➬ Creater    : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/iisgaurav)**\n"
-        AuraX_caption += f"**┣➬ Master:** {mention}\n"
-        AuraX_caption += f"**┗━━━━━━━━━━━━━┛**\n"
-        AuraX_caption += "[✨REPO✨](https://github.com/iisgaurav/AuraXBot) 🔹 [📜License📜](https://github.com/iisgaurav/AuraXBot/blob/master/LICENSE)"
+        AuraX_caption += f"**_____AuraXBot Status_____**\n\n"
+        AuraX_caption += f"**➬ Telethon :** `{version.__version__}`\n"
+        AuraX_caption += f"**➬ AuraXBot :**`{AuraXversion}`\n"
+        AuraX_caption += f"**➬ Uptime :** `{uptime}\n`"
+        AuraX_caption += f"**➬ Sudo       : `{sudou}`**\n"
+        AuraX_caption += f"**➬ Channel   : [Join](https://t.me/AuraXUserbot)**\n"
+        AuraX_caption += f"**➬ Master:** {mention}\n"
 
         await alive.client.send_file(
             alive.chat_id, AuraX_IMG, caption=AuraX_caption, reply_to=reply_to_id
@@ -98,17 +94,14 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"     __**=====BOT STATUS=====**__\n"
-            f"**┏━━━━━━━━━━━━━┓**\n"
-            f"**┣➬ Telethon :** `{version.__version__}`\n"
-            f"**┣➬ AuraXBot :**`{AuraXversion}`\n"
-            f"**┣➬ Uptime :** `{uptime}\n`"
-            f"**┣➬ Sudo : `{sudou}`**\n"
-            f"**┣➬ Channel : [Join Here](https://t.me/AuraXUserbot)**\n"
-            f"**┣➬ Creater : [⋆✩ Gaurav ✩⋆ 🇮🇳](https://t.me/IisGaurav)**\n"
-            f"**┣➬ Master:** {mention}\n"
-            f"**┗━━━━━━━━━━━━━┛**\n"
-            "[✨REPO✨](https://github.com/iisgaurav/AuraXBot) 🔹 [📜License📜](https://github.com/iisgaurav/AuraXBot/blob/master/LICENSE)",
+            f"**_____AuraXBot Status_____**__\n\n"
+           
+            f"**➬ Telethon :** `{version.__version__}`\n"
+            f"**➬ AuraXBot :**`{AuraXversion}`\n"
+            f"**➬ Uptime :** `{uptime}\n`"
+            f"**➬ Sudo : `{sudou}`**\n"
+            f"**➬ Channel : [Join](https://t.me/AuraXUserbot)**\n"
+            f"**➬ Master:** {mention}\n",
         )
 
 CmdHelp("alive").add_command(
