@@ -32,7 +32,7 @@ async def sticklet(event):
     draw = ImageDraw.Draw(image)
     fontsize = 230
 
-    FONT_FILE = await get_font_file(event.client, "@PyCodentsFonts")
+    FONT_FILE = await get_font_file(event.client, "@VegaFonts")
 
     font = ImageFont.truetype(FONT_FILE, size=fontsize)
 
