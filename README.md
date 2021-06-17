@@ -1,4 +1,4 @@
-<h1 align="center">⚡ A U R A X  U S E R B O T ⚡</h1>
+<h1 align="center">⚡ 𝐀 𝐔 𝐑 𝐀 𝐗 𝐔 𝐒 𝐄 𝐑 𝐁 𝐎 𝐓 ⚡</h1>
 
 
 [![AuraX logo](https://telegra.ph/file/62b6e6a1bb6ed711401ce.jpg)](https://t.me/AuraXSupport)
