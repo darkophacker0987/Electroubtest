@@ -8,7 +8,7 @@ from userbot.Config import Config
 from var import Var
 
 StartTime = time.time()
-AuraXversion = "2.3.1"
+AuraXversion = "2.3.2"
 botversion = "0.1"
 
 os.system("pip install --upgrade pip")
