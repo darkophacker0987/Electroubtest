@@ -78,7 +78,7 @@ async def amireallyalive(alive):
     if AuraX_IMG:
         AuraX_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
         
-        AuraX_caption += f"**_____AuraXBot Status_____**\n\n"
+        AuraX_caption += f"**__----AuraXBot Status----__**\n\n"
         AuraX_caption += f"**➬ Telethon :** `{version.__version__}`\n"
         AuraX_caption += f"**➬ AuraXBot :**`{AuraXversion}`\n"
         AuraX_caption += f"**➬ Uptime :** `{uptime}\n`"
@@ -94,7 +94,7 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"**_____AuraXBot Status_____**__\n\n"
+            f"**__----AuraXBot Status----__**\n\n"
            
             f"**➬ Telethon :** `{version.__version__}`\n"
             f"**➬ AuraXBot :**`{AuraXversion}`\n"
