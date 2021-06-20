@@ -147,7 +147,7 @@ async def promote(promt):
         return
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await AuraXevent.edit("Promoted Successfully!")
+        await AuraXevent.edit("𝙋𝙍𝙊𝙈𝙊𝙏𝙀𝘿 𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇𝙇𝙔..!!")
     except BadRequestError:
         await AuraXevent.edit(NO_PERM)
         return
@@ -191,7 +191,7 @@ async def demote(dmod):
     except BadRequestError:
         await AuraXevent.edit(NO_PERM)
         return
-    await AuraXevent.edit("Demoted Successfully!")
+    await AuraXevent.edit("𝘿𝙀𝙈𝙊𝙏𝙀𝘿 𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇𝙇𝙔..!!")
     if BOTLOG:
         await dmod.client.send_message(
             BOTLOG_CHATID,
@@ -227,12 +227,12 @@ async def ban(bon):
         if reply:
             await reply.delete()
     except BadRequestError:
-        await AuraXevent.edit("I ain't got msg deleting right. But still Banned!")
+        await AuraXevent.edit("𝙄 𝙖𝙞𝙣'𝙩 𝙜𝙤𝙩 𝙢𝙨𝙜 𝙙𝙚𝙡𝙚𝙩𝙞𝙣𝙜 𝙧𝙞𝙜𝙝𝙩. 𝘽𝙪𝙩 𝙨𝙩𝙞𝙡𝙡 𝘽𝙖𝙣𝙣𝙚𝙙!")
         return
     if reason:
-        await AuraXevent.edit(f"{str(user.id)} is banned !!\nReason: {reason}")
+        await AuraXevent.edit(f"{str(user.id)} 𝙄𝙎 𝘽𝘼𝙉𝙉𝙀𝘿...!!\nReason: {reason}")
     else:
-        await AuraXevent.edit(f"{str(user.id)} is banned!")
+        await AuraXevent.edit(f"{str(user.id)} 𝙄𝙎 𝘽𝘼𝙉𝙉𝙀𝘿...!!")
     if BOTLOG:
         await bon.client.send_message(
             BOTLOG_CHATID,
@@ -261,7 +261,7 @@ async def nothanos(unbon):
         return
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await AuraXevent.edit("Unbanned Successfully!")
+        await AuraXevent.edit("𝙐𝙉𝘽𝘼𝙉𝙉𝙀𝘿 𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇𝙇𝙔 𝙃𝙊𝙋𝙀 𝙔𝙊𝙐 𝙃𝘼𝙑𝙀 𝙇𝙀𝘼𝙍𝙉𝙀𝘿 𝘼 𝙇𝙀𝙎𝙎𝙊𝙉...!!")
         if BOTLOG:
             await unbon.client.send_message(
                 BOTLOG_CHATID,
@@ -270,7 +270,7 @@ async def nothanos(unbon):
                 f"CHAT: {unbon.chat.title}(`{unbon.chat_id}`)",
             )
     except UserIdInvalidError:
-        await AuraXevent.edit("Sorry I Can't Unban This Retard!")
+        await AuraXevent.edit("𝙎𝙤𝙧𝙧𝙮 𝙄 𝘾𝙖𝙣'𝙩 𝙐𝙣𝙗𝙖𝙣 𝙏𝙝𝙞𝙨 𝙍𝙚𝙩𝙖𝙧𝙙!")
 
 
 @command(incoming=True)
@@ -297,7 +297,7 @@ async def pin(msg):
         return
     to_pin = msg.reply_to_msg_id
     if not to_pin:
-        await edit_or_reply(msg, "Reply to a message to pin it.")
+        await edit_or_reply(msg, "𝙍𝙚𝙥𝙡𝙮 𝙩𝙤 𝙖 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙩𝙤 𝙥𝙞𝙣 𝙞𝙩.")
         return
     options = msg.pattern_match.group(1)
     is_silent = True
@@ -308,7 +308,7 @@ async def pin(msg):
     except BadRequestError:
         await edit_or_reply(msg, NO_PERM)
         return
-    hmm = await edit_or_reply(msg, "Pinned Successfully!")
+    hmm = await edit_or_reply(msg, "𝙋𝙄𝙉𝙉𝙀𝘿 𝙎𝙐𝘾𝘾𝙀𝙎𝙎𝙁𝙐𝙇𝙇𝙔...!!")
     user = await get_user_from_id(msg.sender_id, msg)
     if BOTLOG:
         await msg.client.send_message(
@@ -339,7 +339,7 @@ async def kick(usr):
         return
     user, reason = await get_user_from_event(usr)
     if not user:
-        await edit_or_reply(usr, "Couldn't fetch user.")
+        await edit_or_reply(usr, "𝘾𝙤𝙪𝙡𝙙𝙣'𝙩 𝙛𝙚𝙩𝙘𝙝 𝙪𝙨𝙚𝙧.")
         return
     AuraXevent = await edit_or_reply(usr, "Kicking...")
     try:
@@ -350,10 +350,10 @@ async def kick(usr):
         return
     if reason:
         await AuraXevent.edit(
-            f"Kicked [{user.first_name}](tg://user?id={user.id})!\nReason: {reason}"
+            f"𝙆𝙄𝘾𝙆𝙀𝘿 [{user.first_name}](tg://user?id={user.id})!\nReason: {reason}"
         )
     else:
-        await AuraXevent.edit(f"Kicked [{user.first_name}](tg://user?id={user.id})!")
+        await AuraXevent.edit(f"𝙆𝙄𝘾𝙆𝙀𝘿 [{user.first_name}](tg://user?id={user.id})!")
     if BOTLOG:
         await usr.client.send_message(
             BOTLOG_CHATID,
@@ -375,13 +375,13 @@ async def _(event):
         a = await event.client.get_admin_log(
             event.chat_id, limit=5, edit=False, delete=True
         )
-        deleted_msg = "Deleted message in this group:"
+        deleted_msg = "𝘿𝙚𝙡𝙚𝙩𝙚𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙞𝙣 𝙩𝙝𝙞𝙨 𝙜𝙧𝙤𝙪𝙥:"
         for i in a:
             deleted_msg += "\n👉{}".format(i.old.message)
         await edit_or_reply(event, deleted_msg)
     else:
         await edit_or_reply(
-            event, "You need administrative permissions in order to do this command"
+            event, "𝙔𝙤𝙪 𝙣𝙚𝙚𝙙 𝙖𝙙𝙢𝙞𝙣𝙞𝙨𝙩𝙧𝙖𝙩𝙞𝙫𝙚 𝙥𝙚𝙧𝙢𝙞𝙨𝙨𝙞𝙤𝙣𝙨 𝙞𝙣 𝙤𝙧𝙙𝙚𝙧 𝙩𝙤 𝙙𝙤 𝙩𝙝𝙞𝙨 𝙘𝙤𝙢𝙢𝙖𝙣𝙙"
         )
         await sleep(3)
         try:
@@ -406,7 +406,7 @@ async def get_user_from_event(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit("Pass the user's username, id or reply!")
+            await event.edit("𝙋𝙖𝙨𝙨 𝙩𝙝𝙚 𝙪𝙨𝙚𝙧'𝙨 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚, 𝙞𝙙 𝙤𝙧 𝙧𝙚𝙥𝙡𝙮!")
             return
         if event.message.entities:
             probable_user_mention_entity = event.message.entities[0]
@@ -418,7 +418,7 @@ async def get_user_from_event(event):
         try:
             user_obj = await event.client.get_entity(user)
         except (TypeError, ValueError):
-            await event.edit("Could not fetch info of that user.")
+            await event.edit("𝘾𝙤𝙪𝙡𝙙 𝙣𝙤𝙩 𝙛𝙚𝙩𝙘𝙝 𝙞𝙣𝙛𝙤 𝙤𝙛 𝙩𝙝𝙖𝙩 𝙪𝙨𝙚𝙧.")
             return None
     return user_obj, extra
 
