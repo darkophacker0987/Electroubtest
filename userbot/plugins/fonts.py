@@ -32,6 +32,36 @@ normiefont = [
     "y",
     "z",
 ]
+
+seriffont = [
+    "𝐚",
+    "𝐛",
+    "𝐜",
+    "𝐝",
+    "𝐞",
+    "𝐟",
+    "𝐠",
+    "𝐡",
+    "𝐢",
+    "𝐣",
+    "𝐤",
+    "𝐥",
+    "𝐦",
+    "𝐧",
+    "𝐨",
+    "𝐩",
+    "𝐪",
+    "𝐫",
+    "𝐬",
+    "𝐭",
+    "𝐮",
+    "𝐯",
+    "𝐰",
+    "𝐱",
+    "𝐲",
+    "𝐳",
+]
+
 weebyfont = [
     "卂",
     "乃",
@@ -190,6 +220,25 @@ async def weebify(event):
         if normiecharacter in normiefont:
             weebycharacter = weebyfont[normiefont.index(normiecharacter)]
             string = string.replace(normiecharacter, weebycharacter)
+    await edit_or_reply(event, string)
+
+@bot.on(admin_cmd(pattern="serif(?: |$)(.*)", command="serif"))
+@bot.on(sudo_cmd(pattern="serif(?: |$)(.*)", command="serif", allow_sudo=True))
+async def serify(event):
+    if event.fwd_from:
+        return
+    args = event.pattern_match.group(1)
+    if not args:
+        get = await event.get_reply_message()
+        args = get.text
+    if not args:
+        await edit_or_reply(event, "`What I am Supposed to Serify U Dumb`")
+        return
+    string = "".join(args).lower()
+    for normiecharacter in string:
+        if normiecharacter in normiefont:
+            serifcharacter = seriffont[normiefont.index(normiecharacter)]
+            string = string.replace(normiecharacter, serifcharacter)
     await edit_or_reply(event, string)
 
 
