@@ -282,6 +282,7 @@ GSHAYRI = [
     "Kya khoob farmaya hai Ganducharay ne...\n 𝐒𝐀𝐏𝐍𝐀 ko sapne me pelkar 𝐒𝐰𝐚𝐩𝐚𝐧𝐝𝐨𝐬𝐡 ho gya\n 𝐒𝐀𝐏𝐍𝐀 ki bhi bach gayi aur hume bhi 𝐬𝐚𝐧𝐭𝐨𝐬𝐡 ho gya",
     "G@@nd ke sath aksar ye ghatna ghat jaati hai\n waah waah\n .\n ..\n ...\n ....\n .....\n G@@nd ke sath aksar ye ghatna ghat jaati hai\n Museebat koso dur hoti hai Beh@nch0d G@@nd pehle hi fat jaati hai",
     "Mere sirf do hi tatte hai \n waah waah \n Bh0sdi ke pehle sun to \n Mere sirf do hi tatte hai \n Yaar ek baar chus ke to bata \n Meethe hai ki khatte hai \n"
+    "Pyar me hamne to bas ek hi bat h jani \n Chut h mahhobat ki rajdhani"
 ]
 
 @bot.on(admin_cmd(pattern=f"love$", outgoing=True))
