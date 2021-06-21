@@ -399,6 +399,8 @@ CmdHelp("quotes").add_command(
 ).add_command(
   'gdnoon', None, 'Sends a random Good Afternoon quote'
 ).add_command(
+  'gshayri', None, 'Sends a random abusive shayri'
+).add_command(
   'metoo', None, 'Sends a text saying "Mee too"'
 ).add_command(
   'dhoka', None, 'Sends a random Dhoka quote(katt gya bc)'
