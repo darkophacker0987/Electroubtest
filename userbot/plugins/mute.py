@@ -77,7 +77,7 @@ async def startmute(event):
         elif private == True:
             pass
         else:
-            return await edit_or_reply(event, "I'm not admin here!! Chutiya sala...😒🚶"
+            return await edit_or_reply(event, "𝙎𝙊𝙍𝙍𝙔..!! 𝙊𝙣𝙡𝙮 𝙖𝙙𝙢𝙞𝙣𝙨 𝙘𝙖𝙣 𝙚𝙭𝙚𝙘𝙪𝙩𝙚 𝙩𝙝𝙞𝙨 𝙘𝙤𝙢𝙢𝙖𝙣𝙙;"
             )
         if is_muted(userid, chat_id):
             return await edit_or_reply(event, "This user is already muted in this chat ~~lmfao sed rip~~"
@@ -87,7 +87,7 @@ async def startmute(event):
         except Exception as e:
             await edit_or_reply(event, "Error occured!\nError is " + str(e))
         else:
-            await edit_or_reply(event, "Chup Reh Lawde.\n**｀-´)⊃━☆ﾟ.*･｡ﾟ **")
+            await edit_or_reply(event, "𝙎𝙝𝙝𝙝𝙝......!! 𝙆𝙀𝙀𝙋 𝙌𝙐𝙄𝙏𝙀 𝙉𝙊𝙒.\n**｀-´)⊃━☆ﾟ.*･｡ﾟ *( ͡❛ _⦣ ͡❛)*")
 
 
 @bot.on(admin_cmd(pattern="unmute ?(\d+)?", outgoing=True))
@@ -158,7 +158,7 @@ async def endmute(event):
         except Exception as e:
             await edit_or_reply(event, "Error occured!\nError is " + str(e))
         else:
-            await edit_or_reply(event, "Haa Abb Boll lavde\n乁( ◔ ౪◔)「    ┑(￣Д ￣)┍")
+            await edit_or_reply(event, "𝙁𝙄𝙉𝙀..! 𝙔𝙤𝙪 𝙘𝙖𝙣 𝙨𝙥𝙚𝙖𝙠 𝙣𝙤𝙬.\n乁( ◔ ౪◔)「    ┑(￣Д ￣)┍")
 
 
 @command(incoming=True)
