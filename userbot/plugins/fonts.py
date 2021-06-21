@@ -328,6 +328,8 @@ CmdHelp("fonts").add_command(
 ).add_command(
   'lintxt', '<text>', 'Modifies your text in liny font'
 ).add_command(
+  'serif', "<text>",  'Modifies your text in bold serif'
+).add_command(
   'boxify', '<text>', 'Modifies your text in box font'
 ).add_command(
   'bubble', '<text>', 'Modifies your text in bubble font'
