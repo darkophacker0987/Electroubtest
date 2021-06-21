@@ -276,11 +276,24 @@ GDMORNING = [
     "`It is easy to imagine the world coming to an end. But it is difficult to imagine spending a day without my friends. Good morning.`",
 ]
 
+GSHAYRI = [
+    "Dalte hi jhad gaye sab, tika na koi bhi phool gale me mere haar ke\n Dard unko hua to nikal liya maine, kaanta jo chubha pero me sarkar ke\n Cheekh uthe, chilla uthe, kehne lage mat lo meri\n Ek hi jodi chappal hai, uppar se din bhi hai tyohar ke",
+    "Aasmaan pe fir se kaali ghata chayi hai\n Aaj fir se gharwali ne do baat sunai hai\n Dil to bahut karta hai sudhar jau, magar\n Kabaqht baajuwali aaj fir se bheeg kar aayi hai ",
+    "Kya khoob farmaya hai Ganducharay ne...\n 𝐒𝐀𝐏𝐍𝐀 ko sapne me pelkar 𝐒𝐰𝐚𝐩𝐚𝐧𝐝𝐨𝐬𝐡 ho gya\n 𝐒𝐀𝐏𝐍𝐀 ki bhi bach gayi aur hume bhi 𝐬𝐚𝐧𝐭𝐨𝐬𝐡 ho gya",
+    "G@@nd ke sath aksar ye ghatna ghat jaati hai\n waah waah\n .\n ..\n ...\n ....\n .....\n G@@nd ke sath aksar ye ghatna ghat jaati hai\n Museebat koso dur hoti hai Beh@nch0d G@@nd pehle hi fat jaati hai",
+    "Mere sirf do hi tatte hai \n waah waah \n Bh0sdi ke pehle sun to \n Mere sirf do hi tatte hai \n Yaar ek baar chus ke to bata \n Meethe hai ki khatte hai \n"
+]
 
 @bot.on(admin_cmd(pattern=f"love$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"love$", allow_sudo=True))
 async def love(e):
     txt = random.choice(LOVESTR)
+    await edit_or_reply(e, txt)
+
+@bot.on(admin_cmd(pattern=f"gshayri$", outgoing=True))
+@bot.on(sudo_cmd(pattern=f"gshayri$", allow_sudo=True))
+async def love(e):
+    txt = random.choice(GSHAYRI)
     await edit_or_reply(e, txt)
 
 
