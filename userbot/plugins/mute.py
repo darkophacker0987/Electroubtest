@@ -18,8 +18,7 @@ async def startmute(event):
         await asyncio.sleep(3)
         private = True
     if any(
-        [
-            x in event.raw_text
+        x in event.raw_text
             for x in (
                 "/mute",
                 "!mute",
@@ -50,7 +49,6 @@ async def startmute(event):
                 "ymute",
                 "zmute",
             )
-        ]
     ):
         await asyncio.sleep(0.5)
     else:
@@ -101,8 +99,7 @@ async def endmute(event):
         await asyncio.sleep(3)
         private = True
     if any(
-        [
-            x in event.raw_text
+        x in event.raw_text
             for x in (
                 "/unmute",
                 "!unmute",
@@ -133,7 +130,6 @@ async def endmute(event):
                 "yunmute",
                 "zunmute",
             )
-        ]
     ):
         await asyncio.sleep(0.5)
     else:
