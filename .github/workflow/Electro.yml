@@ -1,0 +1,40 @@
+
+name: Prince Raj
+
+on: push
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Find and Replace
+
+        uses: jacobtomlinson/gha-find-replace@master
+
+        with:
+
+          find: "AuraX"
+
+          replace: "Electro"
+
+      - name: Create Pull Request
+
+        uses: stefanzweifel/git-auto-commit-action@v4
+
+        with:
+
+          commit_message: 'Initial commit'
+
+          commit_options: '--no-verify'
+
+          repository: .
+
+          commit_user_name: darkhacker0987
+
+          commit_user_email: rajprince73123@gmail.com 
